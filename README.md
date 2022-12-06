@@ -2,7 +2,7 @@
 Handwritten English Character Recognition using Deep Learning Concepts 
 
 ## Specific Aim
-The project aims to build a model for classifying handwritten English characters using EMNIST dataset. The dataset contains images that is low in dimensions (28x28). Although there are many popular image classifiers, solving images with such low dimensions might often be too computationally expensive. Thus, we have built a model step by step using keras tuner which results in equal accuracy compared to resnet50v2 and MobilenetV2 but with a 50% deduction in total parameters, and much fast. The notebook contains a comparison of accuracies among the models using a bar graph.
+The project aims to build a model for classifying handwritten English characters using EMNIST dataset. The dataset contains images that is low in dimensions (28x28). Although there are many popular image classifiers, solving images with such low dimensions might often be too computationally expensive. Thus, we have built a model step by step using keras tuner which results in equal accuracy compared to resnet50v2 and MobilenetV2 but with a 50% deduction in total parameters, and much fast. The notebook contains the model blueprints, procedures to download the pre-trained model of the project and finally, a comparison of accuracies among the models using a bar graph.
 
 ## Instructions
 
