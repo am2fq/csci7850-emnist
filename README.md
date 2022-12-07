@@ -100,5 +100,5 @@ metrics=[keras.metrics.SparseCategoricalAccuracy()])
 ```
 ## Results.
 The bar chart below depicts a comparison of the model accuracies when they were trained with and without data augmentation. Also, it can be seen that our custom model with a 50% deduction in parameters is giving nearly equal accuracy compared to resnet50v2 and mobilenetV2.
-
+![My Image](Comparison.PNG)
 
