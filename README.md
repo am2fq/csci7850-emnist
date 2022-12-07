@@ -2,9 +2,13 @@
 Handwritten English Character Recognition using Deep Learning Concepts 
 
 ## Specific Aim
-The project aims to build a model for classifying handwritten English characters using EMNIST dataset. The dataset contains images that is low in dimensions (28x28). Although there are many popular image classifiers, solving images with such low dimensions might often be too computationally expensive. Thus, we have built a model step by step using keras tuner which results in equal accuracy compared to resnet50v2 and MobilenetV2 but with a 50% deduction in total parameters, and much fast. The notebook contains the model blueprints, procedures to download the pre-trained model of the project and finally, a comparison of accuracies among the models using a bar graph.
+The project aims to build a model for classifying handwritten English characters using EMNIST dataset. The dataset contains images that is low in dimensions (28x28). Although there are many popular image classifiers, solving images with such low dimensions might often be too computationally expensive. Thus, we have built a model step by step using keras tuner which results in equal accuracy compared to resnet50v2 and MobilenetV2 but with a 50% deduction in total parameters, and much fast. 
+
+We have also examined the impact of data augmentation by training the models separately with and without data augmentation. We performed augmentation to the test set and assessed the accuracies in order to see the results. All of the models that were trained via data augmentation have been determined to be more reliable. The comparison is shown using a bar graph in the notebook (also at the end of the instructions).
+
 
 ## Instructions
+The notebook also contains all the model blueprints, procedures to download the pre-trained model architectures and its weights.
 
 To clone the repository and run the notebook please execute the below command.
 ```
@@ -94,6 +98,7 @@ Mobilenet.compile(optimizer=keras.optimizers.Adam(learning_rate=0.000025),
 loss=keras.losses.SparseCategoricalCrossentropy(),
 metrics=[keras.metrics.SparseCategoricalAccuracy()])
 ```
-
+## Results.
+The bar chart below depicts a comparison of the model accuracies when they were trained with and without data augmentation. Also, it can be seen that our custom model with a 50% deduction in parameters is giving nearly equal accuracy compared to resnet50v2 and mobilenetV2.
 
 
